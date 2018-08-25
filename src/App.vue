@@ -1,28 +1,32 @@
 <template>
   <div id="app">
-    <background-audio></background-audio>
+    <game-output></game-output>
+    <user-input></user-input>
   </div>
 </template>
 
 <script>
-
-import BackgroundAudio from '@/components/BackgroundAudio'
+import GameOutput from '@/components/GameOutput'
+import UserInput from '@/components/UserInput'
 
 export default {
   name: 'app',
   components: {
-    BackgroundAudio
+    GameOutput,
+    UserInput
   }
 }
 </script>
 
 <style>
-#app {
+body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+  background: black;
+  color: white;
+  padding: 0;
+  margin: 0;
 }
 </style>
